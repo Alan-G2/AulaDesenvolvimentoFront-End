@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
+    <title>Cadastro de Pessoa ou ONG</title>
 </head>
 <body>
-    
+
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="#" method="post">
+        <h2>Preencha seus dados</h2>
+
+        <label for="tipo">Tipo de Cadastro:</label><br>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecione...</option>
+            <option value="pessoa">Pessoa Física</option>
+            <option value="ong">ONG</option>
+        </select><br><br>
+
+        <label for="nome">Nome / Nome da ONG:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required><br><br>
+
+        <label for="documento">CPF / CNPJ:</label><br>
+        <input type="text" id="documento" name="documento" placeholder="Digite o CPF ou CNPJ" required><br><br>
+
+        <label for="data">Data de Nascimento / Fundação:</label><br>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <label for="celular">Número de Celular:</label><br>
+        <input type="tel" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx" required><br><br>
+
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required><br><br>
+
+        <label for="endereco">Endereço:</label><br>
+        <textarea id="endereco" name="endereco" rows="3" placeholder="Rua, número, bairro, cidade..." required></textarea><br><br>
+
+        <label for="observacoes">Observações (opcional):</label><br>
+        <textarea id="observacoes" name="observacoes" rows="3" placeholder="Informações adicionais"></textarea><br><br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
 </body>
 </html>
