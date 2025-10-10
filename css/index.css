@@ -1,0 +1,134 @@
+/*---------- Reset basico --------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------Corpo da pagina -----------*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/*-----------Caveçalho / Menu -----------*/
+
+header#menu{
+    background-color: #af4c75;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1{
+   text-align: center;
+   font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover{ /*mudo o efetio/cor do inicio, cadstro e projeto*/
+    color: #ffe066;
+}
+
+/*-----------Conteudo Principal -----------*/
+
+main {
+    margin-top: 150px; /*espaço por causa do menu fixo*/
+    padding: 20px;
+}
+
+/*--------Seções--------*/
+
+section{
+    width: 80%;
+
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 25px;
+    max-width: 800px
+    margin: 0 auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2{ /*--- tudo que e h2 no meu html ele vai mudar-----*/
+    color: #ff914d;
+    margin-bottom: 10px;
+}
+
+section p,
+section li{
+    font-size: 1,5rem;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* ------ LISTAS ------ */
+
+section ul, section ol{
+    margin-left: 25px;
+}
+
+/* ------- RODAPÉ ------- */
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ------- Links Gerais ------- */
+
+a{
+    transition: 0.3s;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+/* ------- Scroll Suave ------- */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* ------- Responsividade para dispositivos móveis ------- */
+
+@media (max-width: 600px){
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+header h1{
+    font-size: 1.4em;
+}
+
+main {
+    margin-top: 200px;
+    }
+
+}
