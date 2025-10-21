@@ -73,6 +73,20 @@
         </section>
     </main>
 
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Verifica se já foi feito o cadastro
+  const cadastroFeito = localStorage.getItem("cadastroRealizado");
+
+  // Se o cadastro já foi realizado, remove o link "Cadastro" do menu
+  if (cadastroFeito === "true") {
+    const linkCadastro = document.querySelector("nav a[href*='cadastro']");
+    if (linkCadastro) {
+      linkCadastro.remove();
+    }
+  }
+});
+</script>
 
     <footer>
         <p>&copy; 2025 ONG Amigão. Todos os direitos reservados.</p>
